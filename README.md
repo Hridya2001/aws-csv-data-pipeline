@@ -56,7 +56,7 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 
    Enable data-driven decision-making using real-time dashboards based on your CSV input.
 
-   [!
+   [!QuickVisual](images/QuickSight-visual.csv)
 
 ## IAM Roles and Policies Used
 
@@ -102,7 +102,7 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 3. QuickSight Errors
 
    - QuickSight connection issue : Created and uploaded a "manifest.json" into the final s3 bucket.
-   - ataset not visible in QuickSight : granted permissions to QuickSightAccessRole
+   
 
 
 
