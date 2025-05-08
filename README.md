@@ -20,11 +20,14 @@ The S3 upload event triggers an AWS Lambda function, which:
 
 3. Glue Crawler & ETL Job
 A Glue Crawler scans the processed data and creates a table in the AWS Glue Data Catalog.
-A Glue Visual ETL Job (SQL-based transformation only) is run on this table.
-The job output is stored in the final S3 bucket "csv-final-data-bucket"
 
-4. Visualization in QuickSight
+A Glue Visual ETL Job (SQL-based transformation only) is run on this table.
+
+The job output is stored in the final S3 bucket "csv-final-data-bucket".
+
+5. Visualization in QuickSight
 The final transformed dataset is connected to Amazon QuickSight.
+
 Dashboards and visuals are created using the final output.
 
 
