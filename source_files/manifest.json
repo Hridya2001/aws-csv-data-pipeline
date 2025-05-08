@@ -1,0 +1,16 @@
+{
+  "fileLocations": [
+    {
+      "URIs": [
+        "s3://csv-final-data-bucket/etl-reult/final_movies.csv"
+      ]
+    }
+  ],
+  "globalUploadSettings": {
+    "format": "CSV",
+    "delimiter": ",",
+    "textqualifier": "\"",
+    "containsHeader": "true"
+  }
+}
+
