@@ -39,10 +39,10 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
    - Aggregate data (e.g., GROUP BY operations).
 
    - Create derived columns or remove unnecessary ones.
+     
+      ![Screenshot](images/AWS-Glue.png)
 
      The transformed dataset is then saved into a third S3 bucket named "csv-final-data-bucket", which stores the final, analysis-ready data.
-
-     ![Screenshot](images/AWS-Glue.png)
 
 4. Visualization in QuickSight
    
