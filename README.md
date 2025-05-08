@@ -19,6 +19,7 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
     - Reads the raw CSV file.
     - Performs necessary preprocessing.
     - Saves the processed output to another S3 bucket "csv-processed-data-bucket"
+   The [fetch.py](Codes & Query/lambda.py) is here.
 
 3. Glue Crawler & ETL Job
    
