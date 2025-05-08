@@ -1,14 +1,22 @@
-# 📊 CSV Data Pipeline using AWS (S3, Lambda, Glue, QuickSight)
+# CSV Data Pipeline using AWS (S3, Lambda, Glue, QuickSight)
 
-This project demonstrates a complete serverless data pipeline on AWS that processes CSV files using Amazon S3, AWS Lambda, AWS Glue, and visualizes the final output in Amazon QuickSight.
-
+This project demonstrates a data pipeline built using various AWS services to process a movie dataset stored in CSV format. The pipeline consists of uploading the raw data to Amazon S3, preprocessing it using AWS Lambda, transforming it with AWS Glue, and finally visualizing the processed data in Amazon QuickSight. The dataset primarily contains information about movies, including various attributes such as movie genre, title, and year, allowing for meaningful analysis of movie trends, genres, and other related insights.
 
 ## Architecture Diagram
 
 ![Architecture Diagram](images/image.png)
 
-## Project Workflow
+## Technology Used
+1. Programming Language - Python
+2. Scripting Language - SQL
+3. AWS
+   - lambda
+   - S3
+   - AWS Glue
+   - IAM
+   - QuickSight
 
+## Project Workflow
 1. Source CSV File
    
    The process begins when I manually uploads a CSV file to the source S3 bucket, named "csv-raw-data-bucket". This bucket acts as the initial storage point for raw, unprocessed data.
@@ -58,6 +66,11 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 
    ![QuickVisual](images/Quicksight.png)
 
+   This bar diagram effectively shows the number of movies in each genre, allowing for easy comparison of genre popularity within the dataset.
+
+   The horizontal layout and clear labeling make it an appropriate and insightful choice for this type of categorical data analysis..
+
+   
 ## IAM Roles and Policies Used
 
 1. Service: Lambda
