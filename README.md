@@ -31,21 +31,42 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
    Dashboards and visuals are created using the final output.
 
 
-## IAM Roles Used
+## IAM Roles and Policies Used
 
 Service
 ### Lambda
 
 IAM Role Name
-LambdaExecutionRole
+
+### LambdaExecutionRole
 
 Key Permissions
-- AmazonS3ReadOnlyAccess
 - AmazonS3FullAccess
 - AWSLambdaBasicExecutionRole
 
+Service
 
+### Glue	
 
+IAM Role Name
+
+### GlueServiceRole
+
+Key Permissions
+- AWSGlueServiceRole
+- S3FullAccess
+- GlueConsoleFullAccess
+
+Service
+
+### QuickSight	
+
+IAM Role Name
+
+### QuickSightAccessRole	
+
+Key Permissions
+- AmazonS3FullAccess
 
 
 
