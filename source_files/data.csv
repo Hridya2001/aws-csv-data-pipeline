@@ -1,0 +1,31 @@
+movieid,title,genre,partition_0
+1,"Toy Story (1995)",adventure,processed
+2,"Jumanji (1995)",adventure,processed
+3,"Grumpier Old Men (1995)",comedy,processed
+4,"Waiting to Exhale (1995)",drama,processed
+5,"Father of the Bride Part II (1995)",comedy,processed
+6,"Heat (1995)",action,processed
+7,"Sabrina (1995)",comedy,processed
+8,"Tom and Huck (1995)",adventure,processed
+9,"Sudden Death (1995)",action,processed
+10,"GoldenEye (1995)",action,processed
+11,"American President, The (1995)",comedy,processed
+12,"Dracula: Dead and Loving It (1995)",horror,processed
+13,"Balto (1995)",adventure,processed
+14,"Nixon (1995)",drama,processed
+15,"Cutthroat Island (1995)",action,processed
+16,"Casino (1995)",crime,processed
+17,"Sense and Sensibility (1995)",drama,processed
+18,"Four Rooms (1995)",comedy,processed
+19,"Ace Ventura: When Nature Calls (1995)",comedy,processed
+20,"Money Train (1995)",action,processed
+21,"Get Shorty (1995)",comedy,processed
+22,"Copycat (1995)",crime,processed
+23,"Assassins (1995)",action,processed
+24,"Powder (1995)",drama,processed
+25,"Leaving Las Vegas (1995)",drama,processed
+26,"Othello (1995)",drama,processed
+27,"Now and Then (1995)",children,processed
+28,"Persuasion (1995)",drama,processed
+29,"City of Lost Children, The (Cité des enfants perdus, La) (1995)",adventure,processed
+30,"Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)",crime,processed
