@@ -19,8 +19,6 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
     - Reads the raw CSV file.
     - Performs necessary preprocessing.
     - Saves the processed output to another S3 bucket "csv-processed-data-bucket"
-      
-   The [lambda.py](Codes&Query/lambda.py) is here.
 
 3. Glue Crawler & ETL Job
    
@@ -58,7 +56,7 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 
    Enable data-driven decision-making using real-time dashboards based on your CSV input.
 
-
+   [!
 
 ## IAM Roles and Policies Used
 
@@ -92,7 +90,22 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 ## Troubles Faced & Solutions
 
 1. Lambda Function Errors
--
+
+   - Time out Error : Increased timeout(run time)to 30 secs. in Lambda configuration.
+   - No record error : Created a proper test event that mimics an actual S3 event.
+
+2. Glue Job Errors
+    
+   - Visual ETL job failed : This was due to the absence of adequate IAM policies
+   - Data not appearing in final bucket : Configured the output path explicitly in Glue Job's "S3 Target" settings.
+
+3. QuickSight Errors
+
+   - QuickSight connection issue : Created and uploaded a "manifest.json" into the final s3 bucket.
+   - ataset not visible in QuickSight : granted permissions to QuickSightAccessRole
+
+
+
 
 
 
