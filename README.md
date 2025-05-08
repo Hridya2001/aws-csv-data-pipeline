@@ -115,6 +115,9 @@ This project demonstrates a data pipeline built using various AWS services to pr
 3. QuickSight Errors
 
    - QuickSight connection issue : Created and uploaded a "manifest.json" into the final s3 bucket.
+  
+
+## (Note: All AWS resources (S3, Lambda, Glue, QuickSight, etc.) used in this project have been deleted post-completion to prevent unnecessary billing. The project remains available for review via this GitHub repository.)
    
 
 
