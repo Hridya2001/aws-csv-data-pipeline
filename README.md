@@ -40,7 +40,9 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 
    - Create derived columns or remove unnecessary ones.
 
-The transformed dataset is then saved into a third S3 bucket named "csv-final-data-bucket", which stores the final, analysis-ready data.
+     The transformed dataset is then saved into a third S3 bucket named "csv-final-data-bucket", which stores the final, analysis-ready data.
+
+     ![Screenshot](images/AWS-Glue.png)
 
 4. Visualization in QuickSight
    
