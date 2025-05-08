@@ -31,4 +31,29 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
    Dashboards and visuals are created using the final output.
 
 
+## IAM Roles Used
+
+Service
+### Lambda
+
+IAM Role Name
+LambdaExecutionRole
+
+Key Permissions
+- AmazonS3ReadOnlyAccess
+- AmazonS3FullAccess
+- AWSLambdaBasicExecutionRole
+
+
+
+
+
+
+
+
+
+
+
+
+
 
