@@ -10,25 +10,50 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 ## Project Workflow
 
 1. Source CSV File
-   A CSV file is manually uploaded to the source S3 bucket "csv-raw-data-bucket"
+   
+   The process begins when I manually uploads a CSV file to the source S3 bucket, named "csv-raw-data-bucket". This bucket acts as the initial storage point for raw, unprocessed data.
 
 2. Lambda Trigger & Preprocessing
+   
    The S3 upload event triggers an AWS Lambda function, which:
     - Reads the raw CSV file.
     - Performs necessary preprocessing.
     - Saves the processed output to another S3 bucket "csv-processed-data-bucket"
 
 3. Glue Crawler & ETL Job
-   A Glue Crawler scans the processed data and creates a table in the AWS Glue Data Catalog.
+   
+   Glue Crawler
+      An AWS Glue Crawler is configured to scan the "csv-processed-data-bucket". When run:
 
-   A Glue Visual ETL Job (SQL-based transformation only) is run on this table.
+      It automatically detects the schema of the processed CSV data.
 
-   The job output is stored in the final S3 bucket "csv-final-data-bucket".
+      It creates or updates a table in the AWS Glue Data Catalog, making the data queryable using services like Glue, Athena, or Redshift Spectrum.
 
-5. Visualization in QuickSight
-   The final transformed dataset is connected to Amazon QuickSight.
+   Glue ETL Job
+      After the crawler finishes, a Glue ETL job is triggered. This job uses the Visual ETL editor, where only SQL-based transformations are applied—no PySpark or Python scripts are involved.
 
-   Dashboards and visuals are created using the final output.
+      Within this job, it can:
+
+   - Run SELECT queries with filters or joins.
+
+   - Aggregate data (e.g., GROUP BY operations).
+
+   - Create derived columns or remove unnecessary ones.
+
+The transformed dataset is then saved into a third S3 bucket named "csv-final-data-bucket", which stores the final, analysis-ready data.
+
+4. Visualization in QuickSight
+   
+   Finally, the clean and transformed data in "csv-final-data-bucket" is connected to Amazon QuickSight, AWS’s business intelligence tool.
+
+   Using QuickSight, it can:
+
+   Build interactive dashboards and visualizations (bar charts, tables, pie charts, maps, etc.).
+
+   Share insights with stakeholders.
+
+   Enable data-driven decision-making using real-time dashboards based on your CSV input.
+
 
 
 ## IAM Roles and Policies Used
@@ -60,6 +85,10 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
    - AmazonS3FullAccess
 
 
+## Troubles Faced & Solutions
+
+1. Lambda Function Errors
+-
 
 
 
