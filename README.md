@@ -56,7 +56,7 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 
    Enable data-driven decision-making using real-time dashboards based on your CSV input.
 
-   [!QuickVisual](images/QuickSight-visual.csv)
+   [!QuickVisual](images/QuickSight.png)
 
 ## IAM Roles and Policies Used
 
