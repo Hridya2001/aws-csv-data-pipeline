@@ -33,31 +33,31 @@ This project demonstrates a complete serverless data pipeline on AWS that proces
 
 ## IAM Roles and Policies Used
 
-Service: Lambda
+1. Service: Lambda
 
-IAM Role Name: LambdaExecutionRole
+   IAM Role Name: LambdaExecutionRole
 
-Key Permissions
-- AmazonS3FullAccess
-- AWSLambdaBasicExecutionRole
-
-
-Service: Glue	
-
-IAM Role Name: GlueServiceRole
-
-Key Permissions
-- AWSGlueServiceRole
-- S3FullAccess
-- GlueConsoleFullAccess
+   Key Permissions
+   - AmazonS3FullAccess
+   - AWSLambdaBasicExecutionRole
 
 
-Service: QuickSight	
+2. Service: Glue	
 
-IAM Role Name: QuickSightAccessRole	
+   IAM Role Name: GlueServiceRole
 
-Key Permissions
-- AmazonS3FullAccess
+   Key Permissions
+   - AWSGlueServiceRole
+   - S3FullAccess
+   - GlueConsoleFullAccess
+
+
+3. Service: QuickSight	
+
+   IAM Role Name: QuickSightAccessRole	
+
+   Key Permissions
+   - AmazonS3FullAccess
 
 
 
